@@ -104,33 +104,89 @@
         <img class="row-start-1 col-start-3 col-end-6 z-10" src="./assets/5thLeft.jpg" alt="" />
         <img class="row-start-1 col-start-8 col-end-12 z-10 w-6/7 aspect-[4/5] object-cover" src="./assets/5thRight.jpg" alt="" />
       </section>
-      <footer class="px-25">
-        <h1 class="text-6xl font-semibold py-15">Ableton</h1>
-        <div class="grid grid-cols-[1fr_1fr_2fr] gap-5">
+      <footer class="px-25 border-t-2 border-gray-300">
+        <!-- first section of footer -->
+        <div class="">
+          <h1 class="text-6xl font-semibold py-15">Ableton</h1>
+          <div class="grid grid-cols-[1fr_1fr_2fr] gap-5">
+            <div class="flex flex-col footRowLeft gap-1">
+              <a href="">Register Live Push or Move &gt;</a>
+              <a href="">About Ableton &gt;</a>
+              <a href="">Jobs &gt;</a>
+              <div class="flex gap-5 socialsContainer">
+                <img class="h-10 w-10 object-contain" src="./assets/facebook.png" alt="" />
+                <img class="h-10 w-10 object-contain" src="./assets/instagram.png" alt="" />
+                <img class="h-10 w-10 object-contain" src="./assets/twitter.png" alt="" />
+                <img class="h-10 w-10 object-contain" src="./assets/youtube.png" alt="" />
+              </div>
+            </div>
+            <div class="flex flex-col footRowMid gap-1">
+              <a class="font-semibold" href="">Education</a>
+              <a href="">Offers for students and teachers &gt;</a>
+              <a href="">Ableton for the classroom &gt;</a>
+              <a href="">Offers for insititutions &gt;</a>
+            </div>
+            <div class="flex flex-col footRowRight gap-1">
+              <p class="font-semibold">Sign Up to our newsletter</p>
+              <p>Enter your email address to stay up to date with the latest offers, tutorials, downloads, surveys and more.</p>
+              <!-- email input box -->
+              <div class="flex w-full">
+                <input class="bg-gray-300 py-2 px-5" type="email" name="" placeholder="Email Address" id="" />
+                <button class="bg-blue-600 text-blue-50 py-2 px-5">Sign Up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- second section of footer -->
+        <div class="grid grid-cols-[1fr_1fr_2fr] pt-10 gap-5">
           <div class="flex flex-col footRowLeft gap-1">
-            <a href="">Register Live Push or Move</a>
-            <a href="">About Ableton</a>
-            <a href="">Jobs</a>
-            <div class="flex gap-5 socialsContainer">
-              <img class="h-10 w-10 object-contain" src="./assets/facebook.png" alt="">
-              <img class="h-10 w-10 object-contain" src="./assets/instagram.png" alt="">
-              <img class="h-10 w-10 object-contain" src="./assets/twitter.png" alt="">
-              <img class="h-10 w-10 object-contain" src="./assets/youtube.png" alt="">
+            <p class="font-semibold">Community</p>
+            <a href="">Find Ableton User Groups &gt;</a>
+            <a href="">Find Certified Training &gt;</a>
+            <a href="">Become a Certified Trainer &gt;</a>
+          </div>
+          <div class="flex flex-col gap-1">
+            <p class="font-semibold">Distributors</p>
+            <a href="">Find Distributors &gt;</a>
+            <a href="">Try Push in Store &gt;</a>
+          </div>
+          <div class="flex flex-col gap-1">
+            <p class="font-semibold">Language and Location</p>
+            <!-- dropdown menu container -->
+            <div class="flex gap-5">
+              <div class="bg-gray-300">
+                <select class="p-1 pr-5" name="" id="">
+                  <option value="">English</option>
+                  <option value="">French</option>
+                  <option value="">German</option>
+                </select>
+              </div>
+              <div class="bg-gray-300">
+                <select class="p-1 pr-7" name="" id="">
+                  <option value="">United States</option>
+                  <option value="">France</option>
+                  <option value="">Germany</option>
+                </select>
+              </div>
             </div>
           </div>
-          <div class="flex flex-col footRowMid gap-1">
-            <a class="font-semibold href="">Education</a>
-            <a href="">Offers for students</a>
-            <a href="">Offers for insititutions</a>
+        </div>
+        <!-- third section of footer -->
+        <div class="flex justify-between mt-25">
+          <!-- left side -->
+          <div class="flex items-center gap-5 font-medium text-xs">
+            <a href="">Contact Us</a>
+            <a href="">Press Resources</a>
+            <a href="">Legal Info</a>
+            <a href="">Corporate Info</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Cookie Settings</a>
+            <a href="">Imprint</a>
           </div>
-          <div class="flex flex-col footRowRight gap-1">
-            <p class="font-semibold">Sign Up to our newsletter</p>
-            <p>Enter your email address to stay up to date with the latest offers, tutorials, downloads, surveys and more.</p>
-            <!-- email input box -->
-            <div class="flex w-full">
-              <input class="bg-gray-300 py-2 px-5" type="email" name="" placeholder="Email Address" id="">
-              <button class="bg-blue-600 text-blue-50 py-2 px-5">Sign Up</button>
-            </div>
+          <!-- right side -->
+          <div class="flex justify-end items-center font-medium text-sm gap-5">
+            <p>Made in Berlin</p>
+            <img class="w-15" src="./assets/abletonlive.svg" alt="" />
           </div>
         </div>
       </footer>
